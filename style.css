@@ -6,23 +6,27 @@
 main {
   margin: 30px auto;
 }
-.navbar .brand-space {
-  margin-right: 50vw;
-}
-.container-fluid {
-  margin-top: 2px;
-}
-.row .img1-desktop {
-  display: none;
-}
-.row .img1-mobile {
-  width: 100%;
-}
 ul {
   list-style-type: none;
 }
-
+.row1 .future button {
+  width: 20vw;
+  padding: 10px 20px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+}
+.row1 .future button:hover, .row1 .future button:focus {
+  background-color: black;
+}
+.row1 .future button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
 @media (max-width: 912px) {
+  main {
+    width: 80%;
+  }
   .navbar {
     display: flex;
     align-items: center;
@@ -78,16 +82,67 @@ ul {
     text-align: center;
     transform: 0.3s;
   }
+  .img1-desktop {
+    display: none;
+  }
+  .row1 .img1-mobile {
+    display: block;
+    width: 100%;
+  }
+  .row1 .future {
+    display: block;
+  }
+  .row1 .future h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .row1 .future button {
+    width: 50vw;
+  }
 }
 
-
-@media (min-width: 990px) {
+@media (min-width: 913px) {
+  main {
+    width: 80%;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .navbar {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .nav-menu {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .row1 {
+    width: 100%;
+    height: 100vh;
+  }
+  .row .img1 {
+    margin: 0 5px 10px 9vw;
+    padding: auto 32px;
+  }
+  .row .img1 .img1-desktop {
+    width: 58vw;
+    height: 60vh;
+  }
+  .row .img2 {
+    width: 21%;
+    background-color: black;
+    margin-left: 40px;
+    height: 100%;
+  }
   .row .img1-mobile {
     display: none;
   }
   .row .img1-desktop {
     display: block;
     width: 100%;
+    height: 90%;
   }
   .toggle {
     display: none;
@@ -99,5 +154,18 @@ ul {
   }
   ul li a{
     margin-left: 30px;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    background-color: black;
+    color: hsl(5, 85%, 63%);
+  }
+  .row1 .future h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px auto;
+  }
+  .row1 .future .para1 {
+    font-size: 1rem;
   }
 }
