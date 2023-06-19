@@ -23,7 +23,18 @@ ul {
   color: white;
   text-transform: uppercase;
 }
-@media (max-width: 912px) {
+.row1 .img2 {
+  margin-top: 50px;
+  height: 55vh;
+  background-color: black;
+  color: white;
+}
+.row1 .img2 h2 {
+  color: hsl(35, 77%, 62%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 576px) {
   main {
     width: 80%;
   }
@@ -31,27 +42,20 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .toggle {
     display: block;
     cursor: pointer;
+    z-index: 1;
   }
   .toggle.active {
     transition: 0.5s;
   }
-  .toggle.active .line:nth-child(2) {
-    opacity: 0;
-  }
-  .toggle.active .line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .toggle.active .line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
   .nav-menu {
     position: fixed;
     right: -100%;
-    top: 70px;
+    top: 0;
     flex-direction: column;
     width: 80%;
     text-align: left;
@@ -99,9 +103,12 @@ ul {
   .row1 .future button {
     width: 50vw;
   }
-}
 
-@media (min-width: 913px) {
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  /* CSS rules specific to medium devices */
+}
+@media (min-width: 992px) {
   main {
     width: 80%;
     width: 100%;
@@ -139,10 +146,10 @@ ul {
   .row .img1-mobile {
     display: none;
   }
-  .row .img1-desktop {
+  .row1 .img1 .img1-desktop {
     display: block;
-    width: 100%;
-    height: 90%;
+    width: 105%;
+    height: 45vh;
   }
   .toggle {
     display: none;
@@ -154,10 +161,8 @@ ul {
   }
   ul li a{
     margin-left: 30px;
-    text-decoration: none;
   }
-  ul li a:hover {
-    background-color: black;
+  .navbar ul li a:hover {
     color: hsl(5, 85%, 63%);
   }
   .row1 .future h1 {
@@ -167,5 +172,15 @@ ul {
   }
   .row1 .future .para1 {
     font-size: 1rem;
+  }
+  .row1 .img2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  .row1 .img2 hr {
+    margin-top: 20px;
+  }
+  .row1 .img2 {
+    height: 80vh;
   }
 }
