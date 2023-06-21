@@ -21,10 +21,11 @@ document.addEventListener("click", (event) => {
     if (!isNavMenuClicked && !isTogglerClicked) {
       toggler.classList.remove("active")
       navMenu.classList.remove("active")
-      togglerImage.src = toggleOpenImage;
+      togglerImage.src = toggleOpenImage
     }
 })
 document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click", () => {
     toggler.classList.remove("active")
     navMenu.classList.remove("active")
+    togglerImage.src = toggleOpenImage
 }))

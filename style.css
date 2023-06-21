@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+  
 }
 main {
   margin: 30px auto;
@@ -26,7 +31,7 @@ ul {
 .row1 .img2 {
   margin-top: 50px;
   height: 55vh;
-  background-color: black;
+  background-color: hsl(240, 100%, 5%);
   color: white;
 }
 .row1 .img2 h2 {
@@ -34,7 +39,8 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 991px) {
   main {
     width: 80%;
   }
@@ -62,7 +68,7 @@ ul {
     height: 100vh;
     transition: 0.5s;
     background-color: #fff;
-    padding-top: 80px;
+    padding-top: 170px;
   }
   .nav-item {
     margin: 15px auto;
@@ -103,19 +109,49 @@ ul {
   .row1 .future button {
     width: 50vw;
   }
-
+  .row2 .col {
+    display: flex;
+    width: 200vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .row2 .col img {
+    width: 20vw;
+    height: 100%;
+    padding-right: 10px;
+  }
+  .row2 .col span {
+    font-weight: 800;
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%);
+  }
+  .row2 .col .span2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+  }
 }
-@media (min-width: 577px) and (max-width: 992px) {
-  /* CSS rules specific to medium devices */
-}
+/* @media (min-width: 577px) and (max-width: 992px) {
+  main {
+    width: 95%;
+    margin: 30px auto;
+  }
+  .row1 .img1 .img1-desktop {
+    display: block;
+    width: 105%;
+    height: 45vh;
+  }
+  .row1 .img1 .img1-mobile {
+    display: none;
+  }
+} */
 @media (min-width: 992px) {
   main {
-    width: 80%;
-    width: 100%;
+    width: 95%;
     margin: 30px auto;
   }
   .navbar {
-    width: 100%;
+    width: 95%;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -139,9 +175,8 @@ ul {
   }
   .row .img2 {
     width: 21%;
-    background-color: black;
+    background-color: hsl(240, 100%, 5%);
     margin-left: 40px;
-    height: 100%;
   }
   .row .img1-mobile {
     display: none;
@@ -170,7 +205,8 @@ ul {
     font-weight: bold;
     margin: 10px auto;
   }
-  .row1 .future .para1 {
+  .row1 .img1 .future .para1 {
+    padding-top: 20px;
     font-size: 1rem;
   }
   .row1 .img2 {
@@ -182,5 +218,36 @@ ul {
   }
   .row1 .img2 {
     height: 80vh;
+  }
+  .row2 {
+    width: 90%;
+    position: relative;
+    top: -80px;
+    left: 6vw;
+  }
+  .row2 .col {
+    padding: 0 20px;
+    display: flex;
+    height: 10vh;
+    margin: 5px auto 0 25px;
+    width: 20%;
+  }
+  .row2 .col img {
+    width: 20vw;
+    height: 200%;
+    padding-right: 10px;
+  }
+  span {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(233, 8%, 79%);
+  }
+  .row2 .col p {
+    position: relative;
+    top: -10px;
+  }
+  .row2 .col .span2{
+    font-size: 1.1rem;
+    color: #000;
   }
 }
