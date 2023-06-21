@@ -5,9 +5,6 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body {
-  
-}
 main {
   margin: 30px auto;
 }
@@ -39,7 +36,10 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+.row2 .col .span2:hover, .row2 .col .span2:focus {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
 @media (max-width: 991px) {
   main {
     width: 80%;
